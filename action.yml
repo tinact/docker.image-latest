@@ -1,0 +1,17 @@
+---
+name: 'Docker image semver latest'
+description: 'Search latest semver Image.'
+author: 'Simon Baerlocher <s.baerlocher@sbaerlocher.ch>'
+inputs:
+  image_name:
+    description: "Name of the docker image for the last semver version."
+    required: true
+outputs:
+  latest:
+    description: 'Latest version.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'box'
+  color: 'blue'

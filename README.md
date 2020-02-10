@@ -2,6 +2,23 @@
 
 Search latest semver Image.
 
+## Inputs
+
+### image_name
+
+**Required** Name of Image
+
+Name of the docker image for the last semver version..
+
+## Example Usage
+
+```yaml
+- name: Search latest semver Image
+  uses: tinact/docker.image-latest@master
+  with:
+    image_name: 'arillso/ansible'
+```
+
 ## Sponsor
 
 - [ITIGO AG](https://itigo.ch)

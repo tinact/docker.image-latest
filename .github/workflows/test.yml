@@ -1,0 +1,22 @@
+name: Testing Action
+
+on: [push]
+
+jobs:
+  test_action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Testing action 
+        uses: ./
+        id: version
+        with:
+          image_name: arillso/ansible
+
+      - name: latest version env
+        run: echo $latest
+
+      - name: latest version output
+        run: echo ${{ steps.version.outputs.latest }}
