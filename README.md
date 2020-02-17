@@ -8,7 +8,7 @@ Search latest semver Image.
 
 **Required** Name of Image
 
-Name of the docker image for the last semver version..
+Name of the docker image for the last semver version.
 
 ## Example Usage
 
