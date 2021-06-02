@@ -6,12 +6,10 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
     "pack": "ncc build lib/main.js",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run pack"
+    "all": "npm run build && npm run lint && npm run pack"
   },
   "repository": {
     "type": "git",
@@ -41,7 +39,6 @@
     "jest": "^25.5.4",
     "jest-circus": "^25.1.0",
     "js-yaml": "^3.13.1",
-    "prettier": "^2.3.0",
     "ts-jest": "^25.5.1",
     "typescript": "^3.8.3"
   }
