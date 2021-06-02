@@ -19,4 +19,4 @@ jobs:
         run: echo $latest
 
       - name: latest version output
-        run: "::`echo ${{ steps.version.outputs.latest }}`::
+        run: "::`echo ${{ steps.version.outputs.latest }}`::"
