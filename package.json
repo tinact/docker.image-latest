@@ -28,7 +28,7 @@
     "@actions/core": "^1.2.6",
     "@types/lodash": "^4.14.149",
     "@types/semver": "^7.1.0",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@types/jest": "^25.1.3",
