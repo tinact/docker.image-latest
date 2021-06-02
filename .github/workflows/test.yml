@@ -16,7 +16,7 @@ jobs:
           image_name: arillso/ansible
 
       - name: latest version env
-        run: echo $latest
+        run: echo $latest >> $GITHUB_ENV
 
       - name: latest version output
-        run: "::`echo ${{ steps.version.outputs.latest }}`::"
+        run: echo ${{ steps.version.outputs.latest }}
