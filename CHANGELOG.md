@@ -23,6 +23,9 @@ Bump @types/lodash from 4.14.149 to 4.14.170
 Bump yargs-parser from 18.1.0 to 18.1.3
 Bump @types/node from 13.9.0 to 15.6.2
 Bump eslint-plugin-jest from 23.8.2 to 24.3.6
+Bump js-yaml from 3.13.1 to 4.1.0
+Bump eslint from 6.8.0 to 7.27.0
+Bump @types/semver from 7.1.0 to 7.3.6
 
 ## 1.0.1
 
