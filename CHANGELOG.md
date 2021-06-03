@@ -5,9 +5,9 @@ and [human-readable changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## 1.0.3
 
-- Fixing the sorting of larger numbers.
-
 ## Fixed
+
+- Fixing the sorting of larger numbers.
 
 ## 1.0.2
 
