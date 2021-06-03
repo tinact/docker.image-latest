@@ -12,7 +12,7 @@ async function run(): Promise<void> {
       .then(response => {
         const latest = _.last(
           _.remove(
-            _.sortBy(_.map(response.data.results, 'name')),
+            _.map(response.data.results, 'name').sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) ),
             function (e) {
               return semver.validRange(e)
             }

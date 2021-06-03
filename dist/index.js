@@ -1006,7 +1006,7 @@ function run() {
             axios_1.default
                 .get(`https://hub.docker.com/v2/repositories/${imageName}/tags/`)
                 .then(response => {
-                const latest = _.last(_.remove(_.sortBy(_.map(response.data.results, 'name')), function (e) {
+                const latest = _.last(_.remove(_.map(response.data.results, 'name').sort((a, b) => a.localeCompare(b, undefined, { numeric: true })), function (e) {
                     return semver.validRange(e);
                 }));
                 core.setOutput('latest', latest);
